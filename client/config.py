@@ -1,0 +1,12 @@
+# -*- coding:utf-8 -*-
+import pygame
+
+FPS = 60
+WINDOWWIDTH = 1200
+WINDOWHEIGHT = 800
+CELLSIZE = 32
+
+
+PLAYER_CENTER_X = 9
+PLAYER_CENTER_Y = 9
+

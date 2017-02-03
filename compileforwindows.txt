@@ -1,0 +1,10 @@
+1. Ins survive verzeichnis wechseln und
+	python makewinexe.py py2exe
+   ausführen
+
+2. "makewinfiles\freesansbold.ttf" nach "dist\library.zip\pygame\freesansbold.ttf" kopieren
+
+3.  "libiomp5md.dll", Order "Microsoft.VC90.CRT" aus makewinfiles nach dist kopieren
+
+4.  Mit pycharm "server\setup\ItemTemplateSetup.py" aus führend
+    und bestehende Datei "id_image_mapping" nach "dist\resources" kopieren

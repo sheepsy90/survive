@@ -1,0 +1,8 @@
+{
+    "CraftingXMLRPC": ["localhost", 55560],
+    "GameServerManagerXMLRPC": ["localhost", 55555],
+    "ItemListEntryLoggerXMLRPC": ["localhost", 55558],
+    "ItemPersistenceServiceXMLRPC": ["localhost", 55562],
+    "PlayerHandlerServiceXMLRPC": ["localhost", 55556],
+    "LoginServerHandlerXMLRPC": ["", 55557]
+}

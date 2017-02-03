@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+mkdir -p /tmp/survive_client
+
+cp -R common /tmp/survive_client/
+cp -R resources /tmp/survive_client/
+cp -R client /tmp/survive_client/
+cp client.py /tmp/survive_client/
+cp configuration.json /tmp/survive_client/
+
+python server/setup/ItemTemplateSetup.py
+mv id_image_mapping.json /tmp/survive_client/resources/
+
+tar -zcvf ./survive_client.tar.gz /tmp/survive_client

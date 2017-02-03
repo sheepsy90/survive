@@ -1,0 +1,70 @@
+{
+    "npcs": [
+        {
+            "id": 0,
+            "name": "Alfred (Guard)",
+            "character_tile_position": [0, 0],
+            "text": "Always watch out - a robot might be just around the corner."
+        },
+        {
+            "id": 1,
+            "name": "Hanna (Guard)",
+            "character_tile_position": [1, 0],
+            "text": "I don't understand why the AI Core is raging like this."
+        },
+        {
+            "id": 2,
+            "name": "Johannes (Guard)",
+            "character_tile_position": [2, 0],
+            "text": "First Rule: Keep calm and think!"
+        },
+        {
+            "id": 3,
+            "name": "Vitali (Guard)",
+            "character_tile_position": [3, 0],
+            "text": "Sometimes muscles is what you need to crush a robot."
+        },
+        {
+            "id": 4,
+            "name": "Sophie (Guard)",
+            "character_tile_position": [4, 0],
+            "text": "Before all this I just follow my studies in medicine."
+        },
+        {
+            "id": 5,
+            "name": "Memet (Guard)",
+            "character_tile_position": [0, 1],
+            "text": "Outside we could easily outrun them but here..."
+        },
+        {
+            "id": 6,
+            "name": "Martin (Guard)",
+            "character_tile_position": [1, 1],
+            "text": "If you find the weak spot - they just fall apart."
+        },
+        {
+            "id": 7,
+            "name": "Gustav (Guard)",
+            "character_tile_position": [2, 1],
+            "text": "Robots are only machines. Sadly we designed them so perfectly."
+        },
+        {
+            "id": 8,
+            "name": "Melanie (Guard)",
+            "character_tile_position": [3, 1],
+            "text": "This shock rod is just so unhandy."
+        },
+        {
+            "id": 9,
+            "name": "Vincent (Guard)",
+            "character_tile_position": [4, 1],
+            "text": "Electricity could be a solution."
+        },
+        {
+            "id": 10,
+            "name": "Alex (Guard)",
+            "character_tile_position": [0, 2],
+            "text": "If we could just reprogram the core..."
+        }
+    ]
+}

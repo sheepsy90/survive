@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="14" height="18" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="atmospheric_temperature" value="15"/>
+  <property name="atmospheric_type" value="0"/>
+  <property name="identifier" value="8"/>
+ </properties>
+ <tileset firstgid="1" name="insides" tilewidth="32" tileheight="32">
+  <image source="../graphics/insides.png" width="256" height="224"/>
+ </tileset>
+ <tileset firstgid="57" name="walkable_states" tilewidth="32" tileheight="32">
+  <image source="../graphics/walkable_states.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="59" name="stair_symbols" tilewidth="32" tileheight="32">
+  <image source="../graphics/stair_symbols.png" width="256" height="160"/>
+ </tileset>
+ <tileset firstgid="99" name="furniture" tilewidth="32" tileheight="32">
+  <image source="../graphics/furniture.png" width="160" height="480"/>
+ </tileset>
+ <tileset firstgid="174" name="objects" tilewidth="32" tileheight="32">
+  <image source="../graphics/objects.png" width="192" height="160"/>
+ </tileset>
+ <tileset firstgid="204" name="robot_pathways" tilewidth="32" tileheight="32">
+  <image source="../graphics/robot_pathways.png" width="352" height="32"/>
+ </tileset>
+ <tileset firstgid="215" name="wall_images" tilewidth="32" tileheight="32">
+  <image source="../graphics/wall_images.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="279" name="outside" tilewidth="32" tileheight="32">
+  <image source="../graphics/outside.png" width="160" height="480"/>
+ </tileset>
+ <tileset firstgid="354" name="searchables" tilewidth="32" tileheight="32">
+  <image source="../graphics/searchables.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="418" name="activatable_plates" tilewidth="32" tileheight="32">
+  <image source="../graphics/activatable_plates.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="420" name="medical" tilewidth="32" tileheight="32">
+  <image source="../graphics/medical.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="484" name="npcs" tilewidth="32" tileheight="32">
+  <image source="../graphics/npcs.png" width="128" height="32"/>
+ </tileset>
+ <tileset firstgid="488" name="clearence" tilewidth="32" tileheight="32">
+  <image source="../graphics/clearence.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="552" name="area_transitions" tilewidth="32" tileheight="32">
+  <image source="../graphics/area_transitions.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="554" name="floors" tilewidth="32" tileheight="32">
+  <image source="../graphics/tiles/floors.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="810" name="indoor_architecture" tilewidth="32" tileheight="32">
+  <image source="../graphics/tiles/indoor_architecture.png" width="512" height="512"/>
+ </tileset>
+ <layer name="layer_0" width="14" height="18">
+  <data encoding="csv">
+555,556,570,572,573,557,572,574,559,556,554,572,570,556,
+558,574,575,556,557,557,573,555,570,554,571,574,574,558,
+575,573,570,574,571,570,574,572,575,557,554,571,574,572,
+574,571,554,573,558,570,557,559,558,571,559,572,558,572,
+557,573,555,574,572,571,558,554,571,558,575,575,557,556,
+559,572,554,556,554,557,554,555,575,570,554,555,570,575,
+557,557,572,575,554,572,556,555,559,557,554,572,559,557,
+558,570,554,557,556,573,570,556,572,559,572,571,575,557,
+554,572,557,558,557,559,573,573,571,573,559,575,556,555,
+574,559,571,572,574,571,557,574,574,574,573,573,570,571,
+571,571,559,574,559,556,572,559,571,573,573,559,557,558,
+557,558,574,573,558,554,556,556,572,555,574,557,573,554,
+572,556,575,555,558,575,573,572,555,573,574,556,554,559,
+556,558,573,570,554,556,558,574,554,570,555,575,555,558,
+575,556,572,555,574,572,558,570,571,555,571,554,559,571,
+557,558,556,554,555,558,554,557,573,555,571,573,554,554,
+555,557,571,574,554,557,574,570,557,558,558,573,555,554,
+572,557,554,572,557,574,573,559,558,570,571,558,572,572
+</data>
+ </layer>
+ <layer name="layer_1" width="14" height="18">
+  <data encoding="csv">
+894,881,881,881,881,881,881,881,881,881,881,881,881,895,
+891,879,879,892,846,846,846,846,846,922,879,879,879,890,
+891,879,879,890,858,858,858,858,858,939,846,846,846,877,
+891,879,879,890,0,0,0,0,0,972,858,858,858,874,
+891,879,879,890,0,0,0,0,0,0,0,0,0,848,
+891,879,879,890,0,0,0,0,0,0,0,0,0,858,
+876,846,846,847,0,0,0,0,0,0,0,0,0,0,
+874,858,858,858,0,925,843,843,843,843,0,843,928,895,
+874,0,0,0,0,891,858,858,858,858,0,858,891,890,
+891,881,881,895,0,923,924,0,0,0,0,0,891,890,
+891,892,846,877,0,939,877,0,0,0,0,0,891,890,
+891,890,858,874,0,972,874,0,0,0,0,0,891,890,
+845,847,0,874,0,0,874,0,0,0,0,0,891,890,
+858,858,0,845,844,0,848,0,0,0,0,0,891,890,
+0,0,0,858,858,0,858,0,0,0,0,0,891,890,
+0,0,0,0,0,0,0,0,0,0,0,0,891,890,
+0,0,0,894,881,881,881,895,0,0,0,0,891,890,
+875,875,875,880,880,880,880,880,875,875,875,875,880,897
+</data>
+ </layer>
+ <layer name="layer_2" width="14" height="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="glass" width="14" height="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="RobotPathways" width="14" height="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,210,209,209,211,0,0,
+0,0,0,0,0,0,0,0,204,0,0,204,0,0,
+0,0,0,0,0,0,0,0,204,0,0,204,0,0,
+0,0,0,0,0,0,0,0,204,0,0,204,0,0,
+0,0,0,0,0,0,0,0,204,0,0,204,0,0,
+0,0,0,0,0,0,0,0,205,209,209,206,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="Objects">
+  <object name="LockforDoor" type="1" gid="144" x="160" y="79">
+   <properties>
+    <property name="tags" value="closed"/>
+    <property name="usable" value=""/>
+    <property name="usable_param_require" value="0,0,0,0"/>
+    <property name="usable_param_target" value="3"/>
+    <property name="usable_script" value="digital_lock_with_state"/>
+   </properties>
+  </object>
+  <object name="DoorBase" type="2" gid="827" x="320" y="283">
+   <properties>
+    <property name="collidable" value=""/>
+   </properties>
+  </object>
+  <object name="StarterLock" type="3" gid="144" x="32" y="430">
+   <properties>
+    <property name="tags" value="closed"/>
+    <property name="usable" value=""/>
+    <property name="usable_param_require" value="0,0,0,0"/>
+    <property name="usable_param_target" value="2"/>
+    <property name="usable_script" value="digital_lock_with_state"/>
+   </properties>
+  </object>
+  <object name="StarterLaser" type="4" gid="370" x="64" y="364">
+   <properties>
+    <property name="laser" value=""/>
+    <property name="laser_direction" value="DOWN"/>
+    <property name="laser_distance" value="6"/>
+   </properties>
+  </object>
+  <object name="HorizontalLaserLock" type="5" gid="144" x="224" y="274">
+   <properties>
+    <property name="usable" value=""/>
+    <property name="usable_param_require" value="0,0,0,0"/>
+    <property name="usable_param_target" value="1"/>
+    <property name="usable_script" value="digital_lock_without_state"/>
+   </properties>
+  </object>
+  <object name="DoorTop" type="6" gid="811" x="320" y="256">
+   <properties>
+    <property name="collidable" value=""/>
+   </properties>
+  </object>
+  <object name="HorizontalLaser" type="7" gid="378" x="32" y="288">
+   <properties>
+    <property name="laser" value=""/>
+    <property name="laser_direction" value="RIGHT"/>
+    <property name="laser_distance" value="4"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Accessible" width="14" height="18" visible="0" opacity="0.34">
+  <data encoding="csv">
+58,58,58,58,58,58,58,58,58,58,58,58,58,58,
+58,58,58,58,58,58,58,58,58,58,58,58,58,58,
+58,58,58,58,57,57,57,57,57,58,58,58,58,58,
+58,58,58,58,57,57,57,57,57,57,57,57,57,58,
+58,58,58,58,57,57,57,57,57,57,57,57,57,58,
+58,58,58,58,57,57,57,57,57,57,57,57,57,57,
+58,58,58,58,57,57,57,57,57,57,57,57,57,57,
+58,58,58,58,57,58,58,58,58,58,57,58,58,58,
+58,58,57,57,57,58,57,57,57,57,57,57,58,58,
+58,58,58,58,57,58,58,57,57,57,57,57,58,58,
+58,58,58,58,57,58,58,57,57,57,57,57,58,58,
+58,58,57,58,57,57,58,57,57,57,57,57,58,58,
+58,58,57,58,57,57,58,57,57,57,57,57,58,58,
+57,57,57,58,58,57,58,57,57,57,57,57,58,58,
+57,57,57,57,57,57,57,57,57,57,57,57,58,58,
+57,57,57,57,57,57,57,57,57,57,57,57,58,58,
+57,57,57,58,58,58,58,58,57,57,57,57,58,58,
+58,58,58,58,58,58,58,58,58,58,58,58,58,58
+</data>
+ </layer>
+ <objectgroup name="Scripts">
+  <object name="SyncHLaser" type="1" x="123.879" y="233.7" width="79.4545" height="32.5455">
+   <properties>
+    <property name="script" value=""/>
+    <property name="script_key" value="disable_lasers_shortly"/>
+    <property name="script_param_objects" value="7"/>
+   </properties>
+  </object>
+  <object name="SyncStartLaser" type="2" x="74.273" y="386.23" width="79.4545" height="32.5455">
+   <properties>
+    <property name="script" value=""/>
+    <property name="script_key" value="disable_lasers_forever"/>
+    <property name="script_param_objects" value="4"/>
+   </properties>
+  </object>
+  <object name="SyncFinalDoor" type="3" x="172.939" y="104.23" width="79.4545" height="32.5455">
+   <properties>
+    <property name="script" value=""/>
+    <property name="script_key" value="door_handler_and"/>
+    <property name="script_param_objects" value="2,6"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="AreaTransitions">
+  <object name="Area Transition In" type="1" gid="553" x="0" y="512">
+   <properties>
+    <property name="area_transition" value="6,1,80,40"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Enemies">
+  <object name="Enemy" type="1" x="269.5" y="530">
+   <properties>
+    <property name="robot_count" value="1"/>
+    <property name="robot_script" value="path"/>
+    <property name="robot_type" value="1"/>
+   </properties>
+   <polyline points="0,0 100.5,-1 102.5,-163 -2,-160 -1.5,-5"/>
+  </object>
+ </objectgroup>
+</map>

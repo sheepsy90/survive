@@ -1,0 +1,40 @@
+#!/bin/bash
+
+function usage() {
+    echo "Before calling install please activate your virtualenv"
+    exit 1
+}
+
+# Prüfen ob der Installationspfad ein virtualenv ist, sonst hier sofort abbrechen
+INSTALL_PATH=${VIRTUAL_ENV}
+if [ -z "$INSTALL_PATH" -o ! -f $INSTALL_PATH/bin/activate ] ; then
+    usage
+fi
+
+
+### The Libary installation ###
+rm $VIRTUAL_ENV/lib/python2.7/server
+ln -s $PWD/server/ $VIRTUAL_ENV/lib/python2.7/
+echo "Symlinked server to lib/python2.7"
+
+rm $VIRTUAL_ENV/lib/python2.7/client
+ln -s $PWD/client/ $VIRTUAL_ENV/lib/python2.7/
+echo "Symlinked client to lib/python2.7"
+
+rm $VIRTUAL_ENV/lib/python2.7/common
+ln -s $PWD/common/ $VIRTUAL_ENV/lib/python2.7/
+echo "Symlinked common to lib/python2.7"
+
+rm $VIRTUAL_ENV/resources
+ln -s $PWD/resources/ $VIRTUAL_ENV/resources
+echo "Symlinked resources to virtualenv"
+
+### The Script installation ###
+
+echo
+echo "Starting to copy bin/ files"
+cp -Rpv $PWD/bin/* $VIRTUAL_ENV/bin/
+echo "Finished"
+
+
+

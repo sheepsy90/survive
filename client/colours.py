@@ -1,0 +1,10 @@
+WHITE       = (255, 255, 255)
+BLACK       = (  0,   0,   0)
+RED         = (255,   0,   0)
+GREEN       = (  0, 255,   0)
+DARKGREEN   = (  0, 130,   0)
+DARKGRAY    = ( 30,  30,  30)
+GREY        = ( 150,150, 150)
+YELLOW      = (255, 255,   0)
+ROSE        = (250,  50, 218)
+BGCOLOR     = BLACK

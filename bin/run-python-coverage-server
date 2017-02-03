@@ -1,0 +1,10 @@
+#!/bin/bash
+cd $VIRTUAL_ENV/lib/python2.7
+
+
+coverage run --branch --source=server/ -m unittest discover -v
+
+ls
+
+coverage html --include=server/* --omit=server/*__init__.py,server/*tests/*
+firefox htmlcov/index.html &
